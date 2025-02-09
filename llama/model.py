@@ -30,6 +30,11 @@ class ModelArgs:
 
     max_batch_size: int = 32
     max_seq_len: int = 2048
+    use_scaled_rope: bool = True 
+# use_scaled_rope parameter is set to default 'True'
+# Note: scaled rope parameters are defined in params.json and referenced in model.py,
+# but no actual scaling logic has been implemented yet. This placeholder allows the 3.1 model to run
+# without breaking until scaled rope is implemented.
 
 
 class RMSNorm(torch.nn.Module):
