@@ -7,6 +7,8 @@ import fire
 
 from llama import Dialog, Llama
 
+from runtime_config import Config
+
 
 def main(
     ckpt_dir: str,
@@ -28,7 +30,9 @@ def main(
 
     `max_gen_len` is optional because finetuned models are able to stop generations naturally.
     """
+    config = Config()
     generator = Llama.build(
+        config=config,
         ckpt_dir=ckpt_dir,
         tokenizer_path=tokenizer_path,
         max_seq_len=max_seq_len,
@@ -64,6 +68,7 @@ These are just a few of the many attractions that Paris has to offer. With so mu
             {"role": "user", "content": "How to go from Beijing to NY?"},
         ],
     ]
+    print("Running!")
     results = generator.chat_completion(
         dialogs,
         max_gen_len=max_gen_len,
