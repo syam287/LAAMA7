@@ -1,0 +1,14 @@
+{
+    "idf.customExtraVars": {
+        "IDF_TARGET": "esp32c61"
+    },
+    "idf.openOcdConfigs": [
+        "board/esp32c61-ftdi.cfg"
+    ],
+    "terminal.integrated.accessibleViewPreserveCursorPosition": true,
+    "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+    "idf.espIdfPathWin": "C:\\Users\\chris\\esp\\v5.4\\esp-idf",
+    "idf.toolsPathWin": "C:\\Users\\chris\\.espressif",
+    "idf.pythonInstallPath": "C:\\Users\\chris\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.portWin": "COM3"
+}
