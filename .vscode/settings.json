@@ -10,5 +10,8 @@
     "idf.espIdfPathWin": "C:\\Users\\chris\\esp\\v5.4\\esp-idf",
     "idf.toolsPathWin": "C:\\Users\\chris\\.espressif",
     "idf.pythonInstallPath": "C:\\Users\\chris\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
-    "idf.portWin": "COM3"
+    "idf.portWin": "COM3",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
 }
