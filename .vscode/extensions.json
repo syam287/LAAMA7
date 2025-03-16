@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "ggml-org.llama-vscode"
+        "ggml-org.llama-vscode",
+        "vscjava.vscode-java-pack"
     ]
 }
